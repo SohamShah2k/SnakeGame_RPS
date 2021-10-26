@@ -1,0 +1,81 @@
+#main  {
+    position: relative;
+    top:5vh;
+    margin: 15vh auto;
+    width:70%;
+    height:65vh;
+    border: 2px solid #F17720;
+    border-radius: 10px;
+    font-size: 3vw;
+    text-align: center;
+    padding:2vh;
+    background-color: #fbf16587;
+    color:#777777;
+    font-family:sans-serif;
+    text-shadow: 2px 2px 2px rgb(255, 208, 0);
+}
+.disp{
+    display:flex;
+    flex-direction: column;
+    height:100%;
+    width:35%;
+}
+.choice{
+    height:58%;
+    width:100%;
+    border:2px solid #0474BA;
+    border-radius: 10px 10px 0 0;
+    background-color: #f4b0bf;
+    text-shadow: 2px 2px 2px rgb(255, 0, 140);
+    transition: 2s;
+}
+.choice div{
+    transform:scaleX(-1);
+}
+#comp .select img{
+    height:100%;
+    width:100%;
+    object-fit: contain;
+}
+.select{
+    height:30%;
+    width:100%;
+    border:2px solid #00743F;
+    border-radius: 0 0 10px 10px;
+    background-color: #25B39658;
+}
+.option{
+    height:96%;
+    width:30%;
+}
+#user, #yourWin{
+    float:left;
+}
+#comp, #compWin{
+    float:right;
+}
+#result{
+    display:inline-block;
+    position:relative;
+    font-size: 2vw;
+    text-align: center;
+    width:25%;
+    height:100%;
+}
+.choice img{
+    height:80%;
+    width:80%;
+}
+#score{
+    position:relative;
+    top:5vh;
+    font-size:max(32px, 5vw);
+    
+    color:#e27d5f;
+}
+#decl{
+    font-size: 2.5vw;
+    color:white;
+    text-shadow: 2px 2px 2px rgb(0, 255, 81), -2px -2px 2px rgb(255, 242, 0),2px -2px 2px blue, -2px 2px 2px rgb(255,0,0);
+
+}

@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Audiowide:400,300,500);
+
+#main  {
+    position: relative;
+    top:5vh;
+    margin: 15vh auto;
+    width:60%;
+    height:65vh;
+    border-radius: 2px;
+    font-size: 3vw;
+    text-align: center;
+    padding:2vh;
+    background-color: #ffffff;
+    color:#777777;
+    font-family:sans-serif;
+    text-shadow: 2px 2px 2px rgb(255, 208, 0);
+    box-shadow: 5px 5px 4px rgb(131, 115, 42);
+}
+#tableWin{
+    position:relative;
+    left:calc(50% - 21.5vw);
+    top:calc(50% - 15vh);
+}
+#title{
+    position:absolute;
+    top:-45%;
+    left:5%;
+    font-size: 10vh;
+    font-family: "Audiowide", sans-serif;
+    color:#f1dd6d;
+    text-shadow: 2px 2px 2px rgb(156, 128, 0);
+}
+table{
+    font-family: sans-serif;
+    color:#455f82;
+    border-collapse: collapse; 
+    text-shadow:none;
+    
+}
+
+tr{
+    padding:20px;
+}
+td{
+    text-align: left;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    border-bottom: 2px solid #f1dd6d;
+}

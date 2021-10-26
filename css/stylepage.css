@@ -1,0 +1,126 @@
+body{
+    background-color:#035a6d;
+}
+.main{
+    box-sizing: border-box;
+    top:16vh;
+    margin: 2vw;
+    width: 92vw;
+    height: 60vh;
+    border:3px solid;
+    border-color: rgb(183, 255, 231);
+    border-radius: 15px;
+    display: block;
+    flex-direction: column;
+    background-color:inherit;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    overflow:hidden;
+    position:relative;
+    box-shadow: 0 6px 8px rgb(92, 92, 92);
+
+}
+.vertical {
+    border-left: 2px solid rgb(183, 255, 231) ;
+    border-style: dashed;
+    top:2.5%;
+    height: 95%;
+    position:absolute;
+    left: calc(50% - 3px);
+
+}
+.part
+{
+    box-sizing: border-box;
+    width:calc(50% - 3px);
+    height:100%;
+    border:5px solid #ff00e1;
+    border-style: hidden;
+    border-radius: 15px;
+    margin: 0;
+    background-size:100% 100%;
+    position:absolute;
+    font-size: 2vw;
+    transition: all 1s;
+}
+.part:hover{
+    background-color: rgba(0, 0, 0, 0.269);
+    background-size:150% 150%;
+    background-position:33.33% 0%;
+    color:darkcyan;
+    transition: 1s;  
+}
+#snake{
+    float:left;
+}
+#rps{
+    position:absolute;
+    float:right;
+    left:calc(50% + 3px);
+}
+
+#content-1{
+    height:100%;
+    width:100%;
+    background-image: url(snake-game-logo.jpg);
+    background-position: 50% 50%;
+    background-size:cover;
+}
+#content-2{
+    height:100%;
+    width:100%;
+    background-image: url(RPS-game-logo.jpg);
+    background-position: 50% 50%;
+    background-size:cover;
+}
+.content{
+    position:relative;
+    transition: all 1s ease-in;
+}
+.overlay{
+    opacity: 0.45;
+    position:absolute;
+    height:100%;
+    top:0;
+    width: 100%;
+    background-color: rgb(1, 48, 48);
+    color: #490000;
+    font-size: 1vw;
+    border-radius: 5px;
+
+    transition: 03s;
+}
+.overlay:hover{
+    opacity:0.1;
+    
+}
+
+
+.btn{
+    transform:scale(0);
+    /* font-size:xx-large;
+    width:60%;
+    height:30%;
+    
+    transform: scale(0);
+    transition: 1s; */
+}
+.content:hover  .btn{
+    position:absolute;
+    font-size:xx-large;
+    width:60%;
+    height:30%;
+    top:33%;
+    left: 20%;
+    opacity:0.7;
+    transition: ease-in 0.5s;
+    transform: scale(1);
+    box-shadow: 0 6px 8px rgb(92, 92, 92);
+
+}
+#content-1 .btn{
+    background-color: #f2e778;
+}
+#content-2 .btn{
+    background-color: #ffb03a;
+}

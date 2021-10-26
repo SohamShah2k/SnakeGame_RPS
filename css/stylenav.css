@@ -1,0 +1,153 @@
+body{
+    background-image:url('bg.jpg');
+    
+}
+
+nav{
+    /* display:none; */
+    position: fixed;
+    top:5px;
+    left:5px;
+    border-radius: 0.5vmin;
+    width :calc(100vw - 40px);
+    height:7vh;
+    background-color: #21bae3;
+    padding:15px;
+    color:#9ef0ea;
+    column-gap: 60vw;
+    z-index: 2;
+}
+#nav1{
+  display:block;
+  height: 100%;
+  width: 100%;
+  /* visibility: hidden; */
+}
+#nav2{
+  display:none;
+  height: 100%;
+  width: 100%;
+}
+#nav2 #profile{
+    width: 65px;
+}
+#logo{
+    float: left;
+    width: 10%;
+    top:-15%;
+    min-width: 90px;
+    max-width: 200px;
+    height: 130%;
+    background-image: url("logo.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    border: 2px solid #e27d5f;
+    color: #ffffff;
+    border-radius: 1vmin;
+    position: relative;
+}
+#profile{
+    float: right;
+    width: 12rem;
+    min-width: 60px;
+    height:7vh;
+    border-left: 2px solid #e27d5f;
+    color: #ffffff;
+    position: relative;
+
+    
+}
+
+#profile:hover{
+    left:0.5vw;
+    top:-1.5vh;
+    width: 12rem;
+    height:9.5vh;
+    border: 2px solid grey;
+    border-radius: 1vmin;
+    background-color: #0e29303f;
+}
+#profile:hover #img {
+    top:0vh; 
+}
+#profile:hover .dropbtn {
+    font-size:calc(30px);
+    top:-2.5vh;
+    background-color: #00ffa209;
+    color: #e27d5f;
+    text-shadow: 1px 0px 1px rgba(0, 200, 255, 0.627),-1px 0px 1px rgba(0, 221, 255, 0.627);
+
+}
+#img{
+    position: relative;
+    top:-1vh;
+    left:0.5vh;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    border: 2px solid #c38d9d;
+    overflow: hidden;
+    
+    background-size:cover;
+    display:inline-block  ;
+}
+.dropbtn {
+    background-color: #21bae3;
+    color: #e27d5f;
+    font-size:calc(60px);
+    border: none;
+    position: relative;
+    left:0vh;
+    top:-3.5vh;
+    font-weight: 99;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+  
+.dropdown-content {
+
+    display: none;
+    position: absolute;
+    left:2vh;
+    background-color: #b9ffda;
+    width:100%;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    top:60px;
+    color: #40b3a2;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+  .dropdown-content a:hover {
+      background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+    left:-10vh;
+    width:calc(10000%);
+}
+  
+@media only screen and (max-width: 850px) {
+    #nav1 {
+      display:none;
+    }
+    #nav2{
+        display:block;
+    }
+    #profile{
+        width: 30px;
+    }
+  }
+
+ 
